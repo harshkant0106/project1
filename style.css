@@ -1,0 +1,144 @@
+/* css Reset  */
+*{
+    margin:0;
+    padding:0;
+}
+ 
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* navigation bar: logo and image */
+#logo{
+  margin:10px 10px;
+  
+}
+#logo img{
+  height: 75px;
+  margin: 10px 12px;
+}
+
+/* navigation bar: list styling */
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: rgb(238, 233, 233);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    padding: 3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content:"";
+    background:url("happy-labrador_1024x1024.webp") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font: size 1.5em ;
+}
+#serives{
+    margin: 34px;
+    display:flex;
+}
+#serives.box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background:rgb(163, 104, 104);
+}
+#serives.box img{
+    height: 60px;
+    margin: 60px;
+    display: block;
+}
+#service{
+    margin: 35px;
+    display: inline;
+}
+#service.box{
+    border: 2px solid brown;
+    float: left;
+}
+#service.box img{
+    height: 160px;
+    margin: auto;
+    display: inline;
+}
+#service{}
+#service{}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: burlywood;
+    color: rgb(244, 15, 15);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
